@@ -1,0 +1,3 @@
+[submodule "perllib/perl-tags"]
+	path = perllib/perl-tags
+	url = git@github.com:osfameron/perl-tags.git
