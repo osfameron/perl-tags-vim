@@ -42,6 +42,8 @@ function PT_do_tags(filename)
 perl <<EOF
     my $filename = VIM::Eval('a:filename');
 
+    if ( ! -r $filename ) { return; } # Unreadable file
+
     our $tagger;
     $tagger->process(files => $filename, refresh=>1 );
 
