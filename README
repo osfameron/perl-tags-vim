@@ -17,6 +17,15 @@ Manual VIM configuration
     course copy the code from `ftplugin/perl.vim` into your Vim configuration
     as appropriate!
 
+    You will need to install the fatpacked file from the bin directory of
+    the Perl::Tags CPAN module.  This file goes into ~/.vim/perllib/bin
+
+    You can download the fatpacked file from the master Github branch
+    from:
+
+    https://raw.githubusercontent.com/osfameron/perl-tags/master/bin/require-perl-tags-packed
+
+
 # USAGE
 
     * open a Perl file
