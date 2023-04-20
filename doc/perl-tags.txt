@@ -8,8 +8,9 @@
 CONTENTS                                                    *perl-tags-contents*
 
 	Installation ...................................... |perl-tags-installation|
-	Functions ............................................ |perl-tags-functions|
 	Configuration .................................... |perl-tags-configuration|
+	Commands .............................................. |perl-tags-commands|
+	Functions ............................................ |perl-tags-functions|
 
 ==============================================================================
 INSTALLATION                                            *perl-tags-installation*
@@ -22,26 +23,45 @@ INSTALLATION                                            *perl-tags-installation*
       # then run :PluginInstall
 
 ==============================================================================
-FUNCTIONS                                                  *perl-tags-functions*
-  
-  PT_show_tags()
-    View the generated tags file.
-
-==============================================================================
 CONFIGURATION                                          *perl-tags-configuration*
 
 Variables:
 
-	*g:PT_max_level*
+	*g:perl_tags#enabled*
+		Boolean
+		Default: 1
+		Whether this plugin should be enabled.
+
+	*g:perl_tags#max_level*
 		Integer
 		Default: 4
 		The maximum depth that Perl::Tags will recrurse into packages.
 
-	*g:PT_use_ppi*
+	*g:perl_tags#use_ppi*
 		Boolean
 		Default: 0
 		Whether the more advanced PPI tagger should be used (when 0, the Moose
 		tagger is used).
+
+  *g:perl_tags#tags_file*
+		String
+		Default: tempname()
+		The file in which to store generated tags.
+
+==============================================================================
+COMMANDS                                                    *perl-tags-commands*
+  
+  *:PerlTagsEnable*
+    Enable tag generation.
+
+  *:PerlTagsDisable*
+    Disable tag generation.
+
+==============================================================================
+FUNCTIONS                                                  *perl-tags-functions*
+  
+  *perl_tags#show_tags()*
+    View the generated tags file.
 
 ==============================================================================
  vim:tw=78:ts=2:sw=2:noet:ft=help:norl:nolist:iskeyword+=-:
