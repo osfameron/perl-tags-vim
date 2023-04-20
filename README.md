@@ -7,10 +7,6 @@ Using Vundle:
 
     # then run :PluginInstall
 
-Using other package managers
-
-    TODO: confirm that installation works with Pathogen et al
-
 Manual VIM configuration
 
     If you haven't yet switched to a Modern VIM package manager, you can of
@@ -20,18 +16,18 @@ Manual VIM configuration
 # USAGE
 
     * open a Perl file
-    * use Tags as normal: <C-]>, <C-t>, g]  etc.
+    * use Tags as normal: `<C-]>`, `<C-t>`, `g]`  etc.
     * :call PT_show_tags()  # view the generated tags file
 
 # NOTE
 
-This plugin is under development.  Comments from more experienced
-Vim hackers are welcome, as are bug reports and pull requests.
+    This plugin is under development.  Comments from more experienced
+    Vim hackers are welcome, as are bug reports and pull requests.
 
-The fatpacked dependencies have been generated and tested on Perl 5.14.2
-(which is the default on the popular Debian Wheezy (stable) and Ubuntu
-Precise64 Linux distributions.)  Does it work on other platforms?  Please
-let me know!
+    The fatpacked dependencies have been generated and tested on Perl 5.14.2
+    (which is the default on the popular Debian Wheezy (stable) and Ubuntu
+    Precise64 Linux distributions.)  Does it work on other platforms?  Please
+    let me know!
 
 # TODO
 

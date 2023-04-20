@@ -1,0 +1,47 @@
+*perl-tags.txt*
+                                                                *perl* *perl-tags*
+																Perl Tags ~
+
+			A Vim plugin to use Perl::Tags to automatically generate tags files.
+
+==============================================================================
+CONTENTS                                                    *perl-tags-contents*
+
+	Installation ...................................... |perl-tags-installation|
+	Functions ............................................ |perl-tags-functions|
+	Configuration .................................... |perl-tags-configuration|
+
+==============================================================================
+INSTALLATION                                            *perl-tags-installation*
+
+  Using Vundle:
+
+      # add this line to .vimrc
+      Plugin "osfameron/perl-tags-vim"
+
+      # then run :PluginInstall
+
+==============================================================================
+FUNCTIONS                                                  *perl-tags-functions*
+  
+  PT_show_tags()
+    View the generated tags file.
+
+==============================================================================
+CONFIGURATION                                          *perl-tags-configuration*
+
+Variables:
+
+	*g:PT_max_level*
+		Integer
+		Default: 4
+		The maximum depth that Perl::Tags will recrurse into packages.
+
+	*g:PT_use_ppi*
+		Boolean
+		Default: 0
+		Whether the more advanced PPI tagger should be used (when 0, the Moose
+		tagger is used).
+
+==============================================================================
+ vim:tw=78:ts=2:sw=2:noet:ft=help:norl:nolist:iskeyword+=-:
